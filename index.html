@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4682b4;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4682b4;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5a9bd4;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #e6f7ff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #4682b4;
+        }
+
+        .imagen-amigo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .imagen-tematica {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Amigo Secreto</h1>
+    <img src="assets/amigo-secreto.png" alt="Amigo Secreto" class="imagen-tematica">
+    <input type="text" id="nombreAmigo" placeholder="Nombre del amigo">
+    <button onclick="agregarAmigo()">Agregar Amigo</button>
+    <button onclick="sortearAmigo()">Sortear Amigo</button>
+    <ul id="listaAmigos"></ul>
+    <div id="resultado"></div>
+    <img src="assets/play_circle_outline.png" alt="imagen ilustrativa de un amigo secreto" class="imagen-amigo">
+    <script src="app.js"></script>
+</body>
+</html>
